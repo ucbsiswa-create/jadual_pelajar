@@ -216,7 +216,19 @@
   </div>
 
   <script>
-    const JSON_URL = "https://ucbsiswa-create.github.io/jadual_pelajar/BIF_UPDATE_15_SEPTEMBER_2026.json";
+    const DATA_FILES = {
+  BBA: "./Jadual%20Student/BBA.json",
+  BIT: "./Jadual%20Student/BIT.json",
+  BIF: "./Jadual%20Student/BIF.json",
+};
+
+const params = new URLSearchParams(window.location.search);
+
+const requestedClass = (params.get("class") || "BIF5").toUpperCase();
+const requestedSemester = Number(params.get("sem") || 1);
+
+const coursePrefix = requestedClass.match(/^[A-Z]+/)?.[0];
+const JSON_URL = DATA_FILES[coursePrefix];
 
     // 14 Standard Time Slots Matching Header Columns
     const TIME_SLOTS = [
@@ -284,24 +296,73 @@
     }
 
     async function loadTimetable() {
-      refreshBtn.disabled = true;
-      statusEl.textContent = "Sedang mengambil data daripada sumber...";
+  refreshBtn.disabled = true;
+  statusEl.textContent = "Sedang mengambil data daripada sumber...";
 
-      try {
-        const response = await fetch(`${JSON_URL}?_=${Date.now()}`, { cache: "no-store" });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        fullDataset = await response.json();
-        statusEl.textContent = `Data berjaya dikemas kini pada ${new Date().toLocaleTimeString()}`;
-        processDataset();
-      } catch (err) {
-        console.warn("Ralat rangkaian/CORS, menggunakan fallback dataset tempatan:", err);
-        statusEl.textContent = "Data dimuatkan daripada cache simpanan tempatan.";
-        fullDataset = getFallbackDataset();
-        processDataset();
-      } finally {
-        refreshBtn.disabled = false;
-      }
+  try {
+    if (!JSON_URL) {
+      throw new Error("Program kelas tidak sah.");
     }
+
+    const response = await fetch(
+      `${JSON_URL}?_=${Date.now()}`,
+      { cache: "no-store" }
+    );
+
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    fullDataset = await response.json();
+
+    document.getElementById("page-title").textContent =
+      fullDataset.title || "Jadual Kuliah & Tutorial";
+
+    document.getElementById("session-title").textContent =
+      fullDataset.session || "";
+
+    document.getElementById("updated-date").textContent =
+      `Tarikh Kemaskini: ${fullDataset.lastUpdated || "-"}`;
+
+    const matched = fullDataset.semesterSchedules?.find(
+      item =>
+        item.class === requestedClass &&
+        Number(item.semester) === requestedSemester
+    );
+
+    if (!matched) {
+      throw new Error(
+        `Jadual ${requestedClass} Semester ${requestedSemester} tidak dijumpai.`
+      );
+    }
+
+    selectedGroup = matched.class;
+
+    groupSelect.innerHTML = "";
+
+    const option = document.createElement("option");
+    option.value = matched.class;
+    option.textContent = matched.class;
+    groupSelect.appendChild(option);
+
+    groupSelect.value = matched.class;
+    activeGroupLabel.textContent = matched.class;
+
+    statusEl.textContent =
+      `Jadual ${matched.class} Semester ${requestedSemester} berjaya dimuatkan.`;
+
+    renderGrid(matched.schedule);
+    renderSummary(matched.courses);
+
+  } catch (err) {
+    console.error(err);
+    statusEl.textContent = err.message || "Gagal memuatkan jadual.";
+    timetableBody.innerHTML = "";
+    courseSummaryBody.innerHTML = "";
+  } finally {
+    refreshBtn.disabled = false;
+  }
+}
 
     function processDataset() {
       if (!fullDataset) return;
@@ -439,20 +500,18 @@
             // CODE: GROUP SECTION
             // (LECTURER)
             // [VENUE]
-            const code = lesson.code || lesson.kod || lesson.details || "";
-            const group = lesson.class || selectedGroup;
-            const section = lesson.section || lesson.seksyen || "K1";
-            const lecturer = lesson.lecturer || lesson.pensyarah || "";
-            const venue = lesson.venue || lesson.bilik || lesson.dewan || "";
+          const details = lesson.details || "";
 
-            tdLesson.innerHTML = `
-              <div class="font-bold">${code}: ${group} ${section}</div>
-              ${lecturer ? `<div>(${lecturer})</div>` : ''}
-              ${venue ? `<div>[${venue}]</div>` : ''}
-            `;
+const tdLesson = document.createElement("td");
+if (span > 1) tdLesson.colSpan = span;
 
-            tr.appendChild(tdLesson);
-            slotIndex += span;
+tdLesson.textContent = details;
+tdLesson.style.whiteSpace = "pre-line";
+
+tr.appendChild(tdLesson);
+slotIndex += span;
+
+          
           } else {
             const tdEmpty = document.createElement("td");
             tr.appendChild(tdEmpty);
