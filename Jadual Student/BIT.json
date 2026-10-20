@@ -1,0 +1,922 @@
+{
+  "title": "Jadual Kuliah & Tutorial",
+  "session": "Semester 1 Sesi 2026/2027",
+  "lastUpdated": "20 September 2026",
+  "semesterSchedules": [
+    {
+      "semester": 1,
+      "class": "BIT1",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSM 3113: BIT1 K1 (CIK KU NORMAH) [BSTRI3.2B]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.3]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "BMT 1002: BIT1 K1 (NURUL IZZAH) [LAB D]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "CSS 3023: BIT1 K1 (NORASHIKIN) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "LCE 2223: (WAYU NO [BT1.1&1.2"
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:30",
+            "details": "CSN 3023: (NURUL IZ [LAB D]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "BMT 1002: BIT1 K2 (NURUL IZZAH) [LAB D]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSP 3033: BIT1 L2 (CIK KU NORMAH) [LAB D]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.4]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSM 3113: BIT1 K2 (CIK KU NORMAH) [BSTRI3.1A]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "LCE 2113: BIT1 K1 (WAYU NORASYIKIN) [BH2]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "MPU 3112: BIT1 K1 (ASRIL) [BT1.1&1.2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "LCE 2223: BIT1 K1 (WAYU NORASYIKIN) [BT1.3]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3023: BIT1 K1 (NURUL IZZAH) [BSTRI1.1A]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSP 3033: BIT1 K1 (CIK KU NORMAH) [LAB D]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "CSS 3023: BIT1 L1 (NORASHIKIN) [BT2.2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "LCE 2113: (WAYU NO [BSTRI3.1A"
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:30",
+            "details": "CSS 3023: (NORASHIK [BT2.2]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3023: BIT1 L1 (NURUL IZZAH) [LAB MM]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSP 3033: (CIK KU NO [LAB D]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSM 3113",
+          "name": "INTERAKSI MANUSIA & KOMPUTER"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3013 / MGM 3023",
+          "name": "PRINSIP PENGURUSAN"
+        },
+        {
+          "no": 3,
+          "code": "BMT 1002",
+          "name": "MATEMATIK ASAS"
+        },
+        {
+          "no": 4,
+          "code": "CSS 3023",
+          "name": "SISTEM PANGKALAN DATA"
+        },
+        {
+          "no": 5,
+          "code": "LCE 2223",
+          "name": "ENGLISH FOR ACADEMIC PURPOSES"
+        },
+        {
+          "no": 6,
+          "code": "CSN 3023",
+          "name": "ORGANISASI DAN SENIBINA KOMPUTER"
+        },
+        {
+          "no": 7,
+          "code": "CSP 3033",
+          "name": "LOGIK DAN PENGATURCARAAN"
+        },
+        {
+          "no": 8,
+          "code": "LCE 2113",
+          "name": "FOUNDATION ENGLISH"
+        },
+        {
+          "no": 9,
+          "code": "MPU 3112",
+          "name": "ASPIRASI NEGARA BANGSA"
+        }
+      ]
+    },
+    {
+      "semester": 2,
+      "class": "BIT2",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSM 3113: BIT2 K1 (CIK KU NORMAH) [BSTRI3.2B]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSS 3123: BIT2 L1 (CIK KU NORMAH) [LAB MM]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "CSS 3023: BIT2 K1 (NORASHIKIN) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "01:30",
+            "endTime": "15:30",
+            "details": "MPU 3192: BIT2 K1 (ASRIL) [BT1.3]"
+          },
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "LCE 2333: (RAZAK) [BSTRI"
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:30",
+            "details": "CSN 3023: (NURUL IZ [LAB D]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CMP 3113: (NORASHIK [BSTRI3.1A"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "16:30",
+            "details": "CSP 3023: (ESMAYUZI [BT1.3]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "17:30",
+            "details": "CSS 3123: (CIK KU NO [BT1.3]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "01:30",
+            "endTime": "15:30",
+            "details": "CMP 3113: BIT2 L1 (NORASHIKIN) [LAB MM]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSM 3113: BIT2 K2 (CIK KU NORMAH) [BSTRI3.1A]"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "17:30",
+            "details": "CSS 3123: BIT2 K1 (CIK KU NORMAH) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "LCE 2223: BIT2 K1 (WAYU NORASYIKIN) [BT1.3]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3023: BIT2 K1 (NURUL IZZAH) [BSTRI1.1A]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "MPU 3192: (ASRIL) [BSTRI1.2A"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSP 3023: BIT2 L1 (ESMAYUZI) [LAB MM]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "CSS 3023: BIT2 L1 (NORASHIKIN) [BT2.2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "09:30",
+            "endTime": "10:30",
+            "details": "CSS 3023: (NORASHIK [BT2.2]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3023: BIT2 L1 (NURUL IZZAH) [LAB MM]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "CSP 3023: BIT2 K1 (ESMAYUZI) [BT1.3]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CMP 3113: BIT2 K1 (NORASHIKIN) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSM 3113",
+          "name": "INTERAKSI MANUSIA & KOMPUTER"
+        },
+        {
+          "no": 2,
+          "code": "CSS 3123",
+          "name": "ANALISIS DAN REKABENTUK SISTEM"
+        },
+        {
+          "no": 3,
+          "code": "CSS 3023",
+          "name": "SISTEM PANGKALAN DATA"
+        },
+        {
+          "no": 4,
+          "code": "LCE 2333",
+          "name": "ENGLISH FOR PROFESSIONAL PURPOSES"
+        },
+        {
+          "no": 5,
+          "code": "LCE 2223",
+          "name": "ENGLISH FOR ACADEMIC PURPOSES"
+        },
+        {
+          "no": 6,
+          "code": "CSN 3023",
+          "name": "ORGANISASI DAN SENIBINA KOMPUTER"
+        },
+        {
+          "no": 7,
+          "code": "CMP 3113",
+          "name": "PENGATURCARAAN WEB"
+        },
+        {
+          "no": 8,
+          "code": "MPU 3192",
+          "name": "FALSAFAH DAN ISU SEMASA"
+        },
+        {
+          "no": 9,
+          "code": "CSP 3023",
+          "name": "PRINSIP BAHASA PENGATURCARAAN"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "class": "BIT3",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSM 3113: BIT3 K1 (CIK KU NORMAH) [BSTRI3.2B]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSS 3123: BIT3 L1 (CIK KU NORMAH) [LAB MM]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "CSC 3013: BIT3 K1 (ESMAYUZI) [BT2.2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "MPU 3183: (ASRIL) [BT3.1]"
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:30",
+            "details": "CSC 3013: (ESMAYUZI [BSTRI1.1A"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSE 3013: BIT3 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CMP 3113: (NORASHIK [BSTRI3.1A"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "17:30",
+            "details": "CSS 3123: (CIK KU NO [BT1.3]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "01:30",
+            "endTime": "15:30",
+            "details": "CMP 3113: BIT3 L1 (NORASHIKIN) [LAB MM]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSM 3113: BIT3 K2 (CIK KU NORMAH) [BSTRI3.1A]"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "17:30",
+            "details": "CSS 3123: BIT3 K1 (CIK KU NORMAH) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSC 3013: BIT3 L1 (ESMAYUZI) [LAB MM]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSE 3013: (YUZARIMI [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSE 3013: BIT3 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MPU 3183: BIT3 K1 (ASRIL) [BT1.3]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CMP 3113: BIT3 K1 (NORASHIKIN) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSM 3113",
+          "name": "INTERAKSI MANUSIA & KOMPUTER"
+        },
+        {
+          "no": 2,
+          "code": "CSS 3123",
+          "name": "ANALISIS DAN REKABENTUK SISTEM"
+        },
+        {
+          "no": 3,
+          "code": "CSC 3013",
+          "name": "STRUKTUR DATA DAN ALGORITMA"
+        },
+        {
+          "no": 4,
+          "code": "MPU 3183",
+          "name": "PENGHAYATAN ETIKA DAN PERADABAN"
+        },
+        {
+          "no": 5,
+          "code": "CSE 3013",
+          "name": "KEJURUTERAAN PERISIAN"
+        },
+        {
+          "no": 6,
+          "code": "CMP 3113",
+          "name": "PENGATURCARAAN WEB"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "class": "BIT4",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSN 3273: BIT4 K1 (NURUL IZZAH) [BT3.2]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.3]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSN 3253: (NORASHIK [BT1.4]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "CSC 3013: BIT4 K1 (ESMAYUZI) [BT2.2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "CSN 3223: (NURUL IZ [BSTRI3.2B"
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "10:30",
+            "details": "CSC 3013: (ESMAYUZI [BSTRI1.1A"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSE 3013: BIT4 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSN 3273: BIT4 L1 (NURUL IZZAH) [LAB MM]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.4]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3253: BIT4 L1 (NORASHIKIN) [LAB D]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSN 3273: (NURUL IZ [BSTRI3.1A"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "MPU 3412: BIT4 K1 (RUZILAWATI) [BH1]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSC 3013: BIT4 L1 (ESMAYUZI) [LAB MM]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3253: BIT4 K1 (NORASHIKIN) [BSTRI3.1B]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSE 3013: (YUZARIMI [BT1.4]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSN 3223: BIT4 K1 (NURUL IZZAH) [BSTRI3.1B]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSE 3013: BIT4 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "CSN 3223: BIT4 L1 (NURUL IZZAH) [LAB MM]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSN 3273",
+          "name": "ETHICAL HACKING"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3013 / MGM 3023",
+          "name": "PRINSIP PENGURUSAN"
+        },
+        {
+          "no": 3,
+          "code": "CSN 3253",
+          "name": "AUDIT KOMPUTER DAN PENGURUSAN RISIKO"
+        },
+        {
+          "no": 4,
+          "code": "CSC 3013",
+          "name": "STRUKTUR DATA DAN ALGORITMA"
+        },
+        {
+          "no": 5,
+          "code": "CSN 3223",
+          "name": "PEMBANGUNAN APLIKASI MUDAH ALIH"
+        },
+        {
+          "no": 6,
+          "code": "CSE 3013",
+          "name": "KEJURUTERAAN PERISIAN"
+        },
+        {
+          "no": 7,
+          "code": "MPU 3412",
+          "name": "PENGURUSAN KHIDMAT MASYARAKAT"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "class": "BIT5",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSN 3273: BIT5 K1 (NURUL IZZAH) [BT3.2]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.3]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSN 3253: (NORASHIK [BT1.4]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSN 3243: BIT5 K2 (ESMAYUZI) [BSTRI1.1A]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSE 3013: BIT5 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "CSN 3273: BIT5 L1 (NURUL IZZAH) [LAB MM]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.4]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3253: BIT5 L1 (NORASHIKIN) [LAB D]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSN 3273: (NURUL IZ [BSTRI3.1A"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3253: BIT5 K1 (NORASHIKIN) [BSTRI3.1B]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSE 3013: (YUZARIMI [BT1.4]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "17:30",
+            "details": "CSX 3103: (YUZARIMI [BSTRI1.1A"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSE 3013: BIT5 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSN 3243: BIT5 K1 (ESMAYUZI) [LAB D]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSN 3273",
+          "name": "ETHICAL HACKING"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3013 / MGM 3023",
+          "name": "PRINSIP PENGURUSAN"
+        },
+        {
+          "no": 3,
+          "code": "CSN 3253",
+          "name": "AUDIT KOMPUTER DAN PENGURUSAN RISIKO"
+        },
+        {
+          "no": 4,
+          "code": "CSN 3243",
+          "name": "RANGKAIAN LANJUTAN"
+        },
+        {
+          "no": 5,
+          "code": "CSE 3013",
+          "name": "KEJURUTERAAN PERISIAN"
+        },
+        {
+          "no": 6,
+          "code": "CSX 3103",
+          "name": "PROJEK ILMIAH TAHUN AKHIR 1"
+        }
+      ]
+    }
+  ]
+}

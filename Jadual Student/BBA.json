@@ -1,0 +1,792 @@
+{
+  "title": "Jadual Kuliah & Tutorial",
+  "session": "Semester 1 Sesi 2026/2027",
+  "lastUpdated": "15 September 2026",
+  "semesterSchedules": [
+    {
+      "semester": 1,
+      "class": "BBA1",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "14:30",
+            "endTime": "17:30",
+            "details": "MTH 3013: BBA1 K1 (LECT MATH X) [BH2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "LCE 2223: (WAYU NO [BT1.1&1.2"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSS 3114: (YUZARIMI [BT1.1&1.2"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MKT 3013: BBA1 K1 (AZLINAH) [BT2.1]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "LCE 2113: BBA1 K1 (WAYU NORASYIKIN) [BH2]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "MPU 3112: BBA1 K1 (ASRIL) [BT1.1&1.2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "LCE 2223: BBA1 K1 (WAYU NORASYIKIN) [BT1.3]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA1 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "MKT 3013: BBA1 K2 (AZLINAH) [BT3.1]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "KKQ 1071: BBA1 K1 (WAN NORHAZWAN) [BH1]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "LCE 2113: (WAYU NO [BSTRI3.1A"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA1 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "17:30",
+            "details": "GSD 3023: BBA1 K1 (SUDIRMAN) [BT1.3]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "MTH 3013",
+          "name": "MATEMATIK PERNIAGAAN/PENG.KPD MATEMATIK GUNAAN"
+        },
+        {
+          "no": 2,
+          "code": "LCE 2223",
+          "name": "ENGLISH FOR ACADEMIC PURPOSES"
+        },
+        {
+          "no": 3,
+          "code": "CSS 3114",
+          "name": "TEKNOLOGI E-DAGANG"
+        },
+        {
+          "no": 4,
+          "code": "MKT 3013",
+          "name": "PRINSIP PEMASARAN"
+        },
+        {
+          "no": 5,
+          "code": "LCE 2113",
+          "name": "FOUNDATION ENGLISH"
+        },
+        {
+          "no": 6,
+          "code": "MPU 3112",
+          "name": "ASPIRASI NEGARA BANGSA"
+        },
+        {
+          "no": 7,
+          "code": "KKQ 1071",
+          "name": "BOLA TAMPAR"
+        },
+        {
+          "no": 8,
+          "code": "GSD 3023",
+          "name": "KEMAHIRAN AGAMA ISLAM"
+        }
+      ]
+    },
+    {
+      "semester": 1,
+      "class": "BBA2",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "16:30",
+            "endTime": "19:30",
+            "details": "MTH 3013: BBA2 K1 (LECT MATH X) [BH2]"
+          },
+          {
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "LCE 2333: (RAZAK) [BSTRI"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "15:30",
+            "details": "CSS 3114: (YUZARIMI [BT1.1&1.2"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "17:30",
+            "details": "MPU 3192: BBA2 K1 (ASRIL) [BT1.3]"
+          },
+          {
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "12:30",
+            "endTime": "14:30",
+            "details": "MKT 3013: BBA2 K1 (AZLINAH) [BT2.1]"
+          },
+          {
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "12:30",
+            "details": "LCE 2223: BBA2 K1 (WAYU NORASYIKIN) [BT1.3]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "14:30",
+            "details": "CSS 3114: BBA2 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "15:30",
+            "details": "MPU 3192: (ASRIL) [BSTRI1.2A"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "MKT 3013: BBA2 K2 (AZLINAH) [BT3.1]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "KKQ 1071: BBA2 K1 (WAN NORHAZWAN) [BH1]"
+          },
+          {
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "12:30",
+            "endTime": "14:30",
+            "details": "CSS 3114: BBA2 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "19:30",
+            "details": "GSD 3023: BBA2 K1 (SUDIRMAN) [BT1.3]"
+          },
+          {
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "20:30",
+            "endTime": "22:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "MTH 3013",
+          "name": "MATEMATIK PERNIAGAAN/PENG.KPD MATEMATIK GUNAAN"
+        },
+        {
+          "no": 2,
+          "code": "LCE 2333",
+          "name": "ENGLISH FOR PROFESSIONAL PURPOSES"
+        },
+        {
+          "no": 3,
+          "code": "LCE 2223",
+          "name": "ENGLISH FOR ACADEMIC PURPOSES"
+        },
+        {
+          "no": 4,
+          "code": "CSS 3114",
+          "name": "TEKNOLOGI E-DAGANG"
+        },
+        {
+          "no": 5,
+          "code": "MPU 3192",
+          "name": "FALSAFAH DAN ISU SEMASA"
+        },
+        {
+          "no": 6,
+          "code": "MKT 3013",
+          "name": "PRINSIP PEMASARAN"
+        },
+        {
+          "no": 7,
+          "code": "KKQ 1071",
+          "name": "BOLA TAMPAR"
+        },
+        {
+          "no": 8,
+          "code": "GSD 3023",
+          "name": "KEMAHIRAN AGAMA ISLAM"
+        }
+      ]
+    },
+    {
+      "semester": 1,
+      "class": "BBA3",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3113: BBA3 K2 (AZLINAH) [BT1.3]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "17:30",
+            "details": "MTH 3013: BBA3 K1 (LECT MATH X) [BH2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3113: BBA3 K1 (AZLINAH) [BT3.2]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSS 3114: (YUZARIMI [BT1.1&1.2"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "18:30",
+            "details": "MPU 3353: BBA3 K1 (NOR IZZATI) [BSTRI1.1A]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MKT 3013: BBA3 K1 (AZLINAH) [BT2.1]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA3 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "MKT 3013: BBA3 K2 (AZLINAH) [BT3.1]"
+          },
+          {
+            "startTime": "16:30",
+            "endTime": "18:30",
+            "details": "KKQ 1071: BBA3 K1 (WAN NORHAZWAN) [BH1]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA3 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "17:30",
+            "details": "GSD 3023: BBA3 K1 (SUDIRMAN) [BT1.3]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "MGM 3113",
+          "name": "KOMUNIKASI PERNIAGAAN"
+        },
+        {
+          "no": 2,
+          "code": "MTH 3013",
+          "name": "MATEMATIK PERNIAGAAN/PENG.KPD MATEMATIK GUNAAN"
+        },
+        {
+          "no": 3,
+          "code": "CSS 3114",
+          "name": "TEKNOLOGI E-DAGANG"
+        },
+        {
+          "no": 4,
+          "code": "MPU 3353",
+          "name": "INTEGRITI DAN ANTIRASUAH"
+        },
+        {
+          "no": 5,
+          "code": "MKT 3013",
+          "name": "PRINSIP PEMASARAN"
+        },
+        {
+          "no": 6,
+          "code": "KKQ 1071",
+          "name": "BOLA TAMPAR"
+        },
+        {
+          "no": 7,
+          "code": "GSD 3023",
+          "name": "KEMAHIRAN AGAMA ISLAM"
+        }
+      ]
+    },
+    {
+      "semester": 1,
+      "class": "BBA5",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3113: BBA5 K2 (AZLINAH) [BT1.3]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "MGM 3143: BBA5 K1 (WAN NOORWATIE) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MKT 3133: BBA5 K1 (WAN MOHD AMIN) [BH1]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3113: BBA5 K1 (AZLINAH) [BT3.2]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSS 3114: (YUZARIMI [BT1.1&1.2"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "FIN 3013: BBA5 K1 (IRWAN) [BT2.2]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MKT 3123: BBA5 K1 (AZLINAH) [BS1 HEPA]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MKT 3133: BBA5 K2 (WAN MOHD AMIN) [BS1 HEPA]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "FIN 3013: BBA5 K2 (IRWAN) [BT2.1]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA5 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "14:30",
+            "details": "MKT 3123: BBA5 K2 (AZLINAH) [BT1.3]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA5 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "14:30",
+            "details": "MGM 3143: BBA5 K2 (WAN NOORWATIE) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "MGM 3113",
+          "name": "KOMUNIKASI PERNIAGAAN"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3143",
+          "name": "KAEDAH PENYELIDIKAN PERNIAGAAN"
+        },
+        {
+          "no": 3,
+          "code": "MKT 3133",
+          "name": "PEMASARAN LANGSUNG"
+        },
+        {
+          "no": 4,
+          "code": "CSS 3114",
+          "name": "TEKNOLOGI E-DAGANG"
+        },
+        {
+          "no": 5,
+          "code": "FIN 3013",
+          "name": "PENGURUSAN KEWANGAN"
+        },
+        {
+          "no": 6,
+          "code": "MKT 3123",
+          "name": "PEMASARAN STRATEGIK"
+        }
+      ]
+    },
+    {
+      "semester": 1,
+      "class": "BBA6",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3163: BBA6 K1 (ABDUL HALIM) [BS1 HEPA]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "MGM 3143: BBA6 K1 (WAN NOORWATIE) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MKT 3133: BBA6 K1 (WAN MOHD AMIN) [BH1]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "13:30",
+            "details": "CSS 3114: (YUZARIMI [BT1.1&1.2"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "MKT 3063: BBA6 K1 (WAN MOHD AMIN) [BS1 HEPA]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MKT 3123: BBA6 K1 (AZLINAH) [BS1 HEPA]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MKT 3133: BBA6 K2 (WAN MOHD AMIN) [BS1 HEPA]"
+          },
+          {
+            "startTime": "14:30",
+            "endTime": "16:30",
+            "details": "MKT 3063: BBA6 K2 (WAN MOHD AMIN) [BS1 HEPA]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3223: BBA6 K1 (ABDUL HALIM) [BT2.1]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA6 L1 (YUZARIMI) [LAB MM]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "14:30",
+            "details": "MKT 3123: BBA6 K2 (AZLINAH) [BT1.3]"
+          },
+          {
+            "startTime": "15:30",
+            "endTime": "17:30",
+            "details": "MGM 3163: BBA6 K2 (ABDUL HALIM) [BS1 HEPA]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3223: BBA6 K2 (ABDUL HALIM) [BT1.3]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "CSS 3114: BBA6 K1 (YUZARIMI) [BT1.4]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "14:30",
+            "details": "MGM 3143: BBA6 K2 (WAN NOORWATIE) [BT1.4]"
+          },
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Friday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ],
+        "Saturday": [
+          {
+            "startTime": "18:30",
+            "endTime": "20:30",
+            "details": "BREAK"
+          }
+        ]
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "MGM 3163",
+          "name": "ETIKA PERNIAGAAN"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3143",
+          "name": "KAEDAH PENYELIDIKAN PERNIAGAAN"
+        },
+        {
+          "no": 3,
+          "code": "MKT 3133",
+          "name": "PEMASARAN LANGSUNG"
+        },
+        {
+          "no": 4,
+          "code": "CSS 3114",
+          "name": "TEKNOLOGI E-DAGANG"
+        },
+        {
+          "no": 5,
+          "code": "MKT 3063",
+          "name": "PEMASARAN ELEKTRONIK"
+        },
+        {
+          "no": 6,
+          "code": "MKT 3123",
+          "name": "PEMASARAN STRATEGIK"
+        },
+        {
+          "no": 7,
+          "code": "MGM 3223",
+          "name": "PENGURUSAN STRATEGIK"
+        }
+      ]
+    }
+  ]
+}
