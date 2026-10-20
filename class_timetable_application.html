@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadual Kuliah & Tutorial - UCBSISWA</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- html2pdf for exporting PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Liberation+Sans:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap');
+
+    body {
+      font-family: 'Liberation Sans', 'Inter', Arial, sans-serif;
+      background-color: #f3f4f6;
+      color: #000;
+    }
+
+    /* Strict document print styles matching the reference image */
+    .timetable-box {
+      border: 3px solid #000;
+      background-color: #fff;
+    }
+
+    .timetable-table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    .timetable-table th, .timetable-table td {
+      border: 1px solid #000;
+      text-align: center;
+      vertical-align: middle;
+      padding: 4px 2px;
+      font-size: 11px;
+      line-height: 1.25;
+    }
+
+    .timetable-table th {
+      background-color: #e5e7eb;
+      font-weight: bold;
+    }
+
+    .timetable-table td.day-cell {
+      background-color: #e5e7eb;
+      font-weight: bold;
+      width: 80px;
+    }
+
+    .timetable-table td.break-cell {
+      background-color: #e5e7eb;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .course-summary-table {
+      border-collapse: collapse;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .course-summary-table th, .course-summary-table td {
+      border: 1px solid #000;
+      padding: 3px 6px;
+      font-size: 11px;
+      text-align: left;
+    }
+
+    .course-summary-table th {
+      background-color: #e5e7eb;
+    }
+
+    .highlight-cell {
+      background-color: #fef08a !important; /* Tailwind yellow-200 */
+      transition: background-color 0.2s ease;
+    }
+
+    /* Print View Customization */
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+      body {
+        background-color: #fff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .print-container {
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: none !important;
+      }
+      @page {
+        size: A4 landscape;
+        margin: 10mm;
+      }
+    }
+  </style>
+</head>
+<body class="p-2 sm:p-6 min-h-screen flex flex-col items-center">
+
+  <!-- Interactive Control Panel (Hidden on Print) -->
+  <div class="no-print w-full max-w-7xl bg-white rounded-xl shadow-md p-4 mb-6 border border-gray-200">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <h1 class="text-xl font-bold text-gray-800 flex items-center gap-2">
+          <i class="fa-solid fa-calendar-days text-blue-600"></i> UCBSISWA Schedule Portal
+        </h1>
+        <p class="text-xs text-gray-500 mt-1">Select group, search subjects, or export the timetable directly.</p>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3">
+        <!-- Group Dropdown Selector -->
+        <div>
+          <label for="groupSelect" class="block text-xs font-semibold text-gray-700 mb-1">Select Group / Program:</label>
+          <select id="groupSelect" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2 font-semibold">
+            <option value="">Loading groups...</option>
+          </select>
+        </div>
+
+        <!-- Search / Filter Box -->
+        <div>
+          <label for="filterInput" class="block text-xs font-semibold text-gray-700 mb-1">Search/Filter:</label>
+          <div class="relative">
+            <input type="text" id="filterInput" placeholder="Code, Lecturer, Venue..." class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block pl-8 pr-3 p-2 w-48 sm:w-60">
+            <i class="fa-solid fa-magnifying-glass absolute left-2.5 top-3 text-gray-400 text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex items-end gap-2 mt-auto">
+          <button id="btnReload" title="Reload Data" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 text-gray-700 rounded-lg text-sm font-medium transition border border-gray-300">
+            <i class="fa-solid fa-rotate"></i>
+          </button>
+          <button id="btnPrint" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-sm font-medium transition flex items-center gap-2 shadow">
+            <i class="fa-solid fa-print"></i> Print
+          </button>
+          <button id="btnPdf" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-sm font-medium transition flex items-center gap-2 shadow">
+            <i class="fa-solid fa-file-pdf"></i> Export PDF
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Status Banner / Notification -->
+    <div id="statusBanner" class="mt-3 text-xs p-2 rounded hidden"></div>
+  </div>
+
+  <!-- Document Layout (Matches exact provided image format) -->
+  <div id="printableArea" class="print-container bg-white p-6 sm:p-10 shadow-xl border border-gray-200 w-full max-w-[1200px] overflow-x-auto">
+    
+    <!-- Title Header Section -->
+    <div class="text-center mb-6">
+      <h2 id="mainTitle" class="text-base sm:text-lg font-bold tracking-wider uppercase text-black">JADUAL KULIAH & TUTORIAL</h2>
+      <h3 id="subTitle" class="text-sm sm:text-base font-bold tracking-wider uppercase text-black">SEMESTER 1 SESI 2026/2027</h3>
+    </div>
+
+    <!-- Active Group Header -->
+    <div class="mb-2">
+      <span id="activeGroupLabel" class="text-base font-bold text-black uppercase">BIF5</span>
+    </div>
+
+    <!-- Main Grid Table Frame -->
+    <div class="timetable-box mb-8 overflow-x-auto">
+      <table class="timetable-table">
+        <thead>
+          <tr id="headerTimeRow">
+            <th class="w-20">Day</th>
+            <!-- Time slots dynamically rendered or static fallback -->
+            <th>08:30 -<br>09:30</th>
+            <th>09:30 -<br>10:30</th>
+            <th>10:30 -<br>11:30</th>
+            <th>11:30 -<br>12:30</th>
+            <th>12:30 -<br>01:30</th>
+            <th>01:30 -<br>02:30</th>
+            <th>02:30 -<br>03:30</th>
+            <th>03:30 -<br>04:30</th>
+            <th>04:30 -<br>05:30</th>
+            <th>05:30 -<br>06:30</th>
+            <th class="bg-gray-300">06:30 -<br>07:30</th>
+            <th>07:30 -<br>08:30</th>
+            <th>08:30 -<br>09:30</th>
+            <th>09:30 -<br>10:30</th>
+          </tr>
+        </thead>
+        <tbody id="timetableBody">
+          <!-- Timetable rows injected dynamically -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Course Summary Table Section -->
+    <div class="mb-12">
+      <h4 class="text-xs font-bold mb-1 text-black">Course Summary</h4>
+      <table class="course-summary-table">
+        <thead>
+          <tr>
+            <th class="w-12 text-center">No</th>
+            <th>Subjects</th>
+          </tr>
+        </thead>
+        <tbody id="courseSummaryBody">
+          <!-- Unique subject listings injected dynamically -->
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Verification / Signature Footer -->
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-end text-xs text-black pt-4 font-normal leading-relaxed gap-6">
+      <div class="space-y-4">
+        <p>Disahkan oleh Dekan/Ketua Jabatan:</p>
+        <p>Tandatangan :</p>
+        <br>
+        <p>( Nama & Cop Jawatan )</p>
+        <p>Tarikh :</p>
+      </div>
+
+      <div class="text-right">
+        <p id="updateDateLabel">Tarikh Kemaskini :15 SEPTEMBER 2026</p>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Primary JSON Data Source URL
+    const JSON_URL = 'https://ucbsiswa-create.github.io/jadual_pelajar/BIF_UPDATE_15_SEPTEMBER_2026.json';
+
+    // Defined Standard Time Slots (14 slots as shown in the layout image)
+    const TIME_SLOTS = [
+      { id: '0830_0930', start: '08:30', end: '09:30', label: '08:30 - 09:30' },
+      { id: '0930_1030', start: '09:30', end: '10:30', label: '09:30 - 10:30' },
+      { id: '1030_1130', start: '10:30', end: '11:30', label: '10:30 - 11:30' },
+      { id: '1130_1230', start: '11:30', end: '12:30', label: '11:30 - 12:30' },
+      { id: '1230_0130', start: '12:30', end: '01:30', label: '12:30 - 01:30' },
+      { id: '0130_0230', start: '01:30', end: '02:30', label: '01:30 - 02:30' },
+      { id: '0230_0330', start: '02:30', end: '03:30', label: '02:30 - 03:30' },
+      { id: '0330_0430', start: '03:30', end: '04:30', label: '03:30 - 04:30' },
+      { id: '0430_0530', start: '04:30', end: '05:30', label: '04:30 - 05:30' },
+      { id: '0530_0630', start: '05:30', end: '06:30', label: '05:30 - 06:30' },
+      { id: '0630_0730', start: '06:30', end: '07:30', label: '06:30 - 07:30', isBreak: true },
+      { id: '0730_0830', start: '07:30', end: '08:30', label: '07:30 - 08:30' },
+      { id: '0830_0930_e', start: '08:30', end: '09:30', label: '08:30 - 09:30' },
+      { id: '0930_1030_e', start: '09:30', end: '10:30', label: '09:30 - 10:30' }
+    ];
+
+    // Standard Days Order
+    const DAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+    // Global State Container
+    let rawData = null;
+    let availableGroups = [];
+    let selectedGroup = 'BIF5';
+
+    // Initialize application on load
+    window.addEventListener('DOMContentLoaded', () => {
+      fetchScheduleData();
+      setupEventListeners();
+    });
+
+    function setupEventListeners() {
+      document.getElementById('groupSelect').addEventListener('change', (e) => {
+        selectedGroup = e.target.value;
+        document.getElementById('activeGroupLabel').textContent = selectedGroup;
+        renderTimetable();
+      });
+
+      document.getElementById('filterInput').addEventListener('input', () => {
+        applyFilter();
+      });
+
+      document.getElementById('btnReload').addEventListener('click', () => {
+        fetchScheduleData();
+      });
+
+      document.getElementById('btnPrint').addEventListener('click', () => {
+        window.print();
+      });
+
+      document.getElementById('btnPdf').addEventListener('click', () => {
+        exportToPDF();
+      });
+    }
+
+    // Display banner messages
+    function showStatus(msg, isError = false) {
+      const banner = document.getElementById('statusBanner');
+      banner.textContent = msg;
+      banner.className = `mt-3 text-xs p-2 rounded ${isError ? 'bg-red-100 text-red-700 border border-red-300' : 'bg-blue-100 text-blue-700 border border-blue-300'}`;
+      banner.classList.remove('hidden');
+      setTimeout(() => banner.classList.add('hidden'), 5000);
+    }
+
+    // Fetch Schedule Data from remote JSON endpoint
+    async function fetchScheduleData() {
+      showStatus('Fetching latest schedule data...');
+      try {
+        const response = await fetch(JSON_URL);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        rawData = await response.json();
+        showStatus('Schedule data updated successfully.');
+        processLoadedData();
+      } catch (err) {
+        console.warn('Network fetch error, utilizing structured fallback dataset:', err);
+        showStatus('Notice: Loaded embedded schedule dataset.', false);
+        rawData = getFallbackData();
+        processLoadedData();
+      }
+    }
+
+    // Parse and structure groups from JSON
+    function processLoadedData() {
+      if (!rawData) return;
+
+      // Extract unique groups available in JSON or default keys
+      if (Array.isArray(rawData)) {
+        const groupsSet = new Set();
+        rawData.forEach(item => {
+          if (item.group || item.kumpulan || item.program) {
+            groupsSet.add(item.group || item.kumpulan || item.program);
+          }
+        });
+        availableGroups = Array.from(groupsSet);
+      } else if (typeof rawData === 'object') {
+        availableGroups = Object.keys(rawData).filter(k => k !== 'metadata' && k !== 'header');
+      }
+
+      if (availableGroups.length === 0) {
+        availableGroups = ['BIF5', 'BIF1', 'BIF2', 'BIF3', 'BIF4', 'BIF6'];
+      }
+
+      // Populate group select dropdown
+      const select = document.getElementById('groupSelect');
+      select.innerHTML = '';
+      availableGroups.forEach(grp => {
+        const opt = document.createElement('option');
+        opt.value = grp;
+        opt.textContent = grp;
+        select.appendChild(opt);
+      });
+
+      if (availableGroups.includes('BIF5')) {
+        selectedGroup = 'BIF5';
+      } else {
+        selectedGroup = availableGroups[0];
+      }
+      select.value = selectedGroup;
+      document.getElementById('activeGroupLabel').textContent = selectedGroup;
+
+      renderTimetable();
+    }
+
+    // Render Timetable Grid & Course Summary
+    function renderTimetable() {
+      const tbody = document.getElementById('timetableBody');
+      tbody.innerHTML = '';
+
+      // Get classes for active group
+      const classes = getClassesForGroup(selectedGroup);
+
+      // Unique subjects tracking for summary table
+      const uniqueSubjectsMap = new Map();
+
+      // Build Row per Day
+      DAYS.forEach(day => {
+        const tr = document.createElement('tr');
+
+        // Day Name Column
+        const tdDay = document.createElement('td');
+        tdDay.className = 'day-cell';
+        tdDay.textContent = day;
+        tr.appendChild(tdDay);
+
+        // Map timeslots
+        TIME_SLOTS.forEach(slot => {
+          const td = document.createElement('td');
+
+          if (slot.isBreak) {
+            td.className = 'break-cell';
+            td.textContent = 'BREAK';
+          } else {
+            // Find class matching this day and time slot
+            const classItem = findMatchingClass(classes, day, slot);
+            if (classItem) {
+              const code = classItem.code || classItem.kod || '';
+              const group = classItem.group || classItem.kumpulan || selectedGroup;
+              const section = classItem.section || classItem.seksyen || 'K1';
+              const lecturer = classItem.lecturer || classItem.pensyarah || '';
+              const venue = classItem.venue || classItem.bilik || classItem.dewan || '';
+              const subjectName = classItem.title || classItem.subject || classItem.nama_kursus || '';
+
+              // Store for summary table
+              if (code) {
+                const fullSubjectTitle = subjectName ? `${code} - ${subjectName}` : `${code}`;
+                uniqueSubjectsMap.set(code, fullSubjectTitle);
+              }
+
+              // Create formatted cell text
+              let htmlContent = `<div class="cell-content">`;
+              htmlContent += `<div><strong>${code}: ${group} ${section}</strong></div>`;
+              if (lecturer) htmlContent += `<div>(${lecturer})</div>`;
+              if (venue) htmlContent += `<div>[${venue}]</div>`;
+              htmlContent += `</div>`;
+
+              td.innerHTML = htmlContent;
+              td.setAttribute('data-search', `${code} ${lecturer} ${venue} ${subjectName}`.toLowerCase());
+            } else {
+              td.textContent = '';
+            }
+          }
+
+          tr.appendChild(td);
+        });
+
+        tbody.appendChild(tr);
+      });
+
+      renderCourseSummary(uniqueSubjectsMap);
+      applyFilter();
+    }
+
+    // Search and match class logic
+    function findMatchingClass(classList, day, slot) {
+      if (!classList || classList.length === 0) return null;
+
+      return classList.find(c => {
+        const cDay = c.day || c.hari;
+        if (!cDay || cDay.toLowerCase() !== day.toLowerCase()) return false;
+
+        const cStart = c.start_time || c.masa_mula || c.time_start;
+        const cEnd = c.end_time || c.masa_tamat || c.time_end;
+        const slotTime = c.slot;
+
+        if (slotTime && slotTime === slot.id) return true;
+
+        if (cStart) {
+          // Normalize time strings for matching (e.g. 02:30 or 2:30)
+          const normCStart = formatTimeString(cStart);
+          const normSlotStart = formatTimeString(slot.start);
+          return normCStart === normSlotStart;
+        }
+
+        return false;
+      });
+    }
+
+    function formatTimeString(t) {
+      if (!t) return '';
+      let str = t.replace('.', ':').trim();
+      if (str.length === 4 && !str.includes(':')) {
+        str = str.substring(0, 2) + ':' + str.substring(2);
+      }
+      const parts = str.split(':');
+      if (parts.length === 2) {
+        let h = parseInt(parts[0], 10);
+        let m = parts[1];
+        return `${h < 10 ? '0' + h : h}:${m}`;
+      }
+      return str;
+    }
+
+    // Helper to retrieve classes for group
+    function getClassesForGroup(groupName) {
+      if (!rawData) return [];
+
+      if (Array.isArray(rawData)) {
+        return rawData.filter(item => {
+          const g = item.group || item.kumpulan || item.program;
+          return !g || g.toLowerCase() === groupName.toLowerCase();
+        });
+      } else if (typeof rawData === 'object' && rawData[groupName]) {
+        return rawData[groupName];
+      }
+
+      // Fallback default dictionary lookup
+      const fallback = getFallbackData();
+      return fallback[groupName] || fallback['BIF5'] || [];
+    }
+
+    // Render Course Summary list
+    function renderCourseSummary(subjectsMap) {
+      const summaryBody = document.getElementById('courseSummaryBody');
+      summaryBody.innerHTML = '';
+
+      let index = 1;
+      if (subjectsMap.size === 0) {
+        // Fallback default list matching screenshot
+        const defaultSubjects = [
+          'FIN 3033 - PENGURUSAN KEWANGAN LANJUTAN',
+          'ISF 3213 - ISLAMIC CAPITAL MARKET',
+          'GSD 3073 - AQIDAH ISLAMIYYAH',
+          'ENT 3013 - ASAS KEUSAHAWANAN',
+          'ENT 3023 - ISLAMIC ENTREPRENEURSHIP',
+          'MGM 3223 - PENGURUSAN STRATEGIK'
+        ];
+        defaultSubjects.forEach(sub => {
+          const tr = document.createElement('tr');
+          tr.innerHTML = `<td class="text-center font-bold">${index++}</td><td>${sub}</td>`;
+          summaryBody.appendChild(tr);
+        });
+        return;
+      }
+
+      subjectsMap.forEach((fullTitle) => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td class="text-center font-bold">${index++}</td><td>${fullTitle}</td>`;
+        summaryBody.appendChild(tr);
+      });
+    }
+
+    // Filter & Search highlighting
+    function applyFilter() {
+      const query = document.getElementById('filterInput').value.toLowerCase().trim();
+      const cells = document.querySelectorAll('#timetableBody td[data-search]');
+
+      cells.forEach(cell => {
+        const content = cell.getAttribute('data-search') || '';
+        if (query.length > 0 && content.includes(query)) {
+          cell.classList.add('highlight-cell');
+        } else {
+          cell.classList.remove('highlight-cell');
+        }
+      });
+    }
+
+    // PDF Export Function
+    function exportToPDF() {
+      const element = document.getElementById('printableArea');
+      const opt = {
+        margin:       [5, 5, 5, 5],
+        filename:     `Jadual_Kuliah_${selectedGroup}.pdf`,
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2, useCORS: true },
+        jsPDF:        { unit: 'mm', format: 'a4', orientation: 'landscape' }
+      };
+
+      showStatus('Generating PDF document...');
+      html2pdf().set(opt).from(element).save().then(() => {
+        showStatus('PDF generated successfully.');
+      }).catch(err => {
+        console.error(err);
+        showStatus('Failed to generate PDF. You can try Print -> Save as PDF.', true);
+      });
+    }
+
+    // Embedded Fallback Data (Matches provided image exactly)
+    function getFallbackData() {
+      return {
+        "BIF5": [
+          // Sunday
+          { day: "Sunday", start_time: "02:30", end_time: "03:30", code: "FIN 3033", group: "BIF5", section: "K1", lecturer: "IRWAN", venue: "BT3.1", title: "PENGURUSAN KEWANGAN LANJUTAN" },
+          { day: "Sunday", start_time: "04:30", end_time: "05:30", code: "ISF 3213", group: "BIF5", section: "K2", lecturer: "IRWAN", venue: "BT3.1", title: "ISLAMIC CAPITAL MARKET" },
+
+          // Monday
+          { day: "Monday", start_time: "10:30", end_time: "11:30", code: "GSD 3073", group: "BIF5", section: "K1", lecturer: "SUDIRMAN", venue: "BT2.3", title: "AQIDAH ISLAMIYYAH" },
+          { day: "Monday", start_time: "03:30", end_time: "04:30", code: "ENT 3013", group: "BIF5", section: "K2", lecturer: "NORULHUDA", venue: "BSTRI3.2B", title: "ASAS KEUSAHAWANAN" },
+
+          // Tuesday
+          { day: "Tuesday", start_time: "10:30", end_time: "11:30", code: "ENT 3023", group: "BIF5", section: "K1", lecturer: "AZMERA", venue: "BSTRI3.1B", title: "ISLAMIC ENTREPRENEURSHIP" },
+          { day: "Tuesday", start_time: "01:30", end_time: "02:30", code: "ISF 3213", group: "BIF5", section: "K1", lecturer: "IRWAN", venue: "BT3.1", title: "ISLAMIC CAPITAL MARKET" },
+          { day: "Tuesday", start_time: "04:30", end_time: "05:30", code: "FIN 3033", group: "BIF5", section: "K2", lecturer: "IRWAN", venue: "BT2.2", title: "PENGURUSAN KEWANGAN LANJUTAN" },
+
+          // Wednesday
+          { day: "Wednesday", start_time: "08:30", end_time: "09:30", code: "MGM 3223", group: "BIF5", section: "K1", lecturer: "ABDUL HALIM", venue: "BT2.1", title: "PENGURUSAN STRATEGIK" },
+          { day: "Wednesday", start_time: "10:30", end_time: "11:30", code: "ENT 3013", group: "BIF5", section: "K1", lecturer: "NORULHUDA", venue: "BT3.2", title: "ASAS KEUSAHAWANAN" },
+
+          // Thursday
+          { day: "Thursday", start_time: "08:30", end_time: "09:30", code: "MGM 3223", group: "BIF5", section: "K2", lecturer: "ABDUL HALIM", venue: "BT1.3", title: "PENGURUSAN STRATEGIK" },
+          { day: "Thursday", start_time: "01:30", end_time: "02:30", code: "ENT 3023", group: "BIF5", section: "K2", lecturer: "AZMERA", venue: "BT2.1", title: "ISLAMIC ENTREPRENEURSHIP" }
+        ]
+      };
+    }
+  </script>
+</body>
+</html>
