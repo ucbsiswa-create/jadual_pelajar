@@ -1,0 +1,597 @@
+{
+  "title": "Jadual Kuliah & Tutorial",
+  "session": "Semester 1 Sesi 2026/2027",
+  "lastUpdated": "15 September 2026",
+  "semesterSchedules": [
+    {
+      "semester": 1,
+      "class": "BIF1",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSS 3073: BIF1 L1 (NORASHIKIN) [LAB MM]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.3]"
+          },
+          {
+            "startTime": "02:30",
+            "endTime": "05:30",
+            "details": "MTH 3013: BIF1 K1 (LECT MATH X) [BH2]"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "LCE 2223: (WAYU NO [BT1.1&1.2"
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "12:30",
+            "details": "GSD 3073: BIF1 K1 (SUDIRMAN) [BT2.3]"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.4]"
+          },
+          {
+            "startTime": "02:30",
+            "endTime": "04:30",
+            "details": "LCE 2113: BIF1 K1 (WAYU NORASYIKIN) [BH2]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "MPU 3112: BIF1 K1 (ASRIL) [BT1.1&1.2]"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "LCE 2223: BIF1 K1 (WAYU NORASYIKIN) [BT1.3]"
+          },
+          {
+            "startTime": "02:30",
+            "endTime": "04:30",
+            "details": "CSS 3073: BIF1 K1 (NORASHIKIN) [BSTRI3.1A]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "KKQ 1071: BIF1 K1 (WAN NORHAZWAN) [BH1]"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "LCE 2113: (WAYU NO [BSTRI3.1A"
+          }
+        ],
+        "Friday": [],
+        "Saturday": []
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSS 3073",
+          "name": "APLIKASI KOMPUTER"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3013 / MGM 3023",
+          "name": "PRINSIP PENGURUSAN"
+        },
+        {
+          "no": 3,
+          "code": "MTH 3013",
+          "name": "MATEMATIK PERNIAGAAN/PENG.KPD MATEMATIK GUNAAN"
+        },
+        {
+          "no": 4,
+          "code": "LCE 2223",
+          "name": "ENGLISH FOR ACADEMIC PURPOSES"
+        },
+        {
+          "no": 5,
+          "code": "GSD 3073",
+          "name": "AQIDAH ISLAMIYYAH"
+        },
+        {
+          "no": 6,
+          "code": "LCE 2113",
+          "name": "FOUNDATION ENGLISH"
+        },
+        {
+          "no": 7,
+          "code": "MPU 3112",
+          "name": "ASPIRASI NEGARA BANGSA"
+        },
+        {
+          "no": 8,
+          "code": "KKQ 1071",
+          "name": "BOLA TAMPAR"
+        }
+      ]
+    },
+    {
+      "semester": 3,
+      "class": "BIF3",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSS 3073: BIF3 L1 (NORASHIKIN) [LAB MM]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.3]"
+          },
+          {
+            "startTime": "02:30",
+            "endTime": "05:30",
+            "details": "MTH 3013: BIF3 K1 (LECT MATH X) [BH2]"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "08:30",
+            "endTime": "09:30",
+            "details": "MPU 3183: (ASRIL) [BT3.1]"
+          },
+          {
+            "startTime": "09:30",
+            "endTime": "12:30",
+            "details": "GSD 3073: BIF3 K1 (SUDIRMAN) [BT2.3]"
+          },
+          {
+            "startTime": "01:30",
+            "endTime": "03:30",
+            "details": "MPU 3192: BIF3 K1 (ASRIL) [BT1.3]"
+          },
+          {
+            "startTime": "03:30",
+            "endTime": "05:30",
+            "details": "ENT 3013: BIF3 K2 (NORULHUDA) [BSTRI3.2B]"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.4]"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "ENT 3013: BIF3 K1 (NORULHUDA) [BT3.2]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "01:30",
+            "details": "MPU 3192: (ASRIL) [BSTRI1.2A"
+          },
+          {
+            "startTime": "02:30",
+            "endTime": "04:30",
+            "details": "CSS 3073: BIF3 K1 (NORASHIKIN) [BSTRI3.1A]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "KKQ 1071: BIF3 K1 (WAN NORHAZWAN) [BH1]"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MPU 3183: BIF3 K1 (ASRIL) [BT1.3]"
+          }
+        ],
+        "Friday": [],
+        "Saturday": []
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSS 3073",
+          "name": "APLIKASI KOMPUTER"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3013 / MGM 3023",
+          "name": "PRINSIP PENGURUSAN"
+        },
+        {
+          "no": 3,
+          "code": "MTH 3013",
+          "name": "MATEMATIK PERNIAGAAN/PENG.KPD MATEMATIK GUNAAN"
+        },
+        {
+          "no": 4,
+          "code": "MPU 3183",
+          "name": "PENGHAYATAN ETIKA DAN PERADABAN"
+        },
+        {
+          "no": 5,
+          "code": "GSD 3073",
+          "name": "AQIDAH ISLAMIYYAH"
+        },
+        {
+          "no": 6,
+          "code": "MPU 3192",
+          "name": "FALSAFAH DAN ISU SEMASA"
+        },
+        {
+          "no": 7,
+          "code": "ENT 3013",
+          "name": "ASAS KEUSAHAWANAN"
+        },
+        {
+          "no": 8,
+          "code": "KKQ 1071",
+          "name": "BOLA TAMPAR"
+        }
+      ]
+    },
+    {
+      "semester": 4,
+      "class": "BIF4",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "CSS 3073: BIF4 L1 (NORASHIKIN) [LAB MM]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.3]"
+          },
+          {
+            "startTime": "02:30",
+            "endTime": "04:30",
+            "details": "FIN 3033: BIF4 K1 (IRWAN) [BT3.1]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "ISF 3213: BIF4 K2 (IRWAN) [BT3.1]"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "09:30",
+            "endTime": "12:30",
+            "details": "GSD 3073: BIF4 K1 (SUDIRMAN) [BT2.3]"
+          },
+          {
+            "startTime": "03:30",
+            "endTime": "05:30",
+            "details": "ENT 3013: BIF4 K2 (NORULHUDA) [BSTRI3.2B]"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3013 / MGM 3023 (WAN MOHD AMIN) [BT1.4]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "ENT 3023: BIF4 K1 (AZMERA) [BSTRI3.1B]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "ISF 3213: BIF4 K1 (IRWAN) [BT3.1]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "FIN 3033: BIF4 K2 (IRWAN) [BT2.2]"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "ENT 3013: BIF4 K1 (NORULHUDA) [BT3.2]"
+          },
+          {
+            "startTime": "02:30",
+            "endTime": "04:30",
+            "details": "CSS 3073: BIF4 K1 (NORASHIKIN) [BSTRI3.1A]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "KKQ 1071: BIF4 K1 (WAN NORHAZWAN) [BH1]"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "ENT 3023: BIF4 K2 (AZMERA) [BT2.1]"
+          }
+        ],
+        "Friday": [],
+        "Saturday": []
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "CSS 3073",
+          "name": "APLIKASI KOMPUTER"
+        },
+        {
+          "no": 2,
+          "code": "MGM 3013 / MGM 3023",
+          "name": "PRINSIP PENGURUSAN"
+        },
+        {
+          "no": 3,
+          "code": "FIN 3033",
+          "name": "PENGURUSAN KEWANGAN LANJUTAN"
+        },
+        {
+          "no": 4,
+          "code": "ISF 3213",
+          "name": "ISLAMIC CAPITAL MARKET"
+        },
+        {
+          "no": 5,
+          "code": "GSD 3073",
+          "name": "AQIDAH ISLAMIYYAH"
+        },
+        {
+          "no": 6,
+          "code": "ENT 3013",
+          "name": "ASAS KEUSAHAWANAN"
+        },
+        {
+          "no": 7,
+          "code": "ENT 3023",
+          "name": "ISLAMIC ENTREPRENEURSHIP"
+        },
+        {
+          "no": 8,
+          "code": "KKQ 1071",
+          "name": "BOLA TAMPAR"
+        }
+      ]
+    },
+    {
+      "semester": 5,
+      "class": "BIF5",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "02:30",
+            "endTime": "04:30",
+            "details": "FIN 3033: BIF5 K1 (IRWAN) [BT3.1]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "ISF 3213: BIF5 K2 (IRWAN) [BT3.1]"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "09:30",
+            "endTime": "12:30",
+            "details": "GSD 3073: BIF5 K1 (SUDIRMAN) [BT2.3]"
+          },
+          {
+            "startTime": "03:30",
+            "endTime": "05:30",
+            "details": "ENT 3013: BIF5 K2 (NORULHUDA) [BSTRI3.2B]"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "ENT 3023: BIF5 K1 (AZMERA) [BSTRI3.1B]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "ISF 3213: BIF5 K1 (IRWAN) [BT3.1]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "FIN 3033: BIF5 K2 (IRWAN) [BT2.2]"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3223: BIF5 K1 (ABDUL HALIM) [BT2.1]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "ENT 3013: BIF5 K1 (NORULHUDA) [BT3.2]"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3223: BIF5 K2 (ABDUL HALIM) [BT1.3]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "ENT 3023: BIF5 K2 (AZMERA) [BT2.1]"
+          }
+        ],
+        "Friday": [],
+        "Saturday": []
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "FIN 3033",
+          "name": "PENGURUSAN KEWANGAN LANJUTAN"
+        },
+        {
+          "no": 2,
+          "code": "ISF 3213",
+          "name": "ISLAMIC CAPITAL MARKET"
+        },
+        {
+          "no": 3,
+          "code": "GSD 3073",
+          "name": "AQIDAH ISLAMIYYAH"
+        },
+        {
+          "no": 4,
+          "code": "ENT 3013",
+          "name": "ASAS KEUSAHAWANAN"
+        },
+        {
+          "no": 5,
+          "code": "ENT 3023",
+          "name": "ISLAMIC ENTREPRENEURSHIP"
+        },
+        {
+          "no": 6,
+          "code": "MGM 3223",
+          "name": "PENGURUSAN STRATEGIK"
+        }
+      ]
+    },
+    {
+      "semester": 6,
+      "class": "BIF6",
+      "schedule": {
+        "Sunday": [
+          {
+            "startTime": "02:30",
+            "endTime": "04:30",
+            "details": "FIN 3033: BIF6 K1 (IRWAN) [BT3.1]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "ISF 3213: BIF6 K2 (IRWAN) [BT3.1]"
+          }
+        ],
+        "Monday": [
+          {
+            "startTime": "09:30",
+            "endTime": "12:30",
+            "details": "GSD 3073: BIF6 K1 (SUDIRMAN) [BT2.3]"
+          },
+          {
+            "startTime": "03:30",
+            "endTime": "05:30",
+            "details": "ENT 3013: BIF6 K2 (NORULHUDA) [BSTRI3.2B]"
+          }
+        ],
+        "Tuesday": [
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "ENT 3023: BIF6 K1 (AZMERA) [BSTRI3.1B]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "ISF 3213: BIF6 K1 (IRWAN) [BT3.1]"
+          },
+          {
+            "startTime": "04:30",
+            "endTime": "06:30",
+            "details": "FIN 3033: BIF6 K2 (IRWAN) [BT2.2]"
+          }
+        ],
+        "Wednesday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3223: BIF6 K1 (ABDUL HALIM) [BT2.1]"
+          },
+          {
+            "startTime": "10:30",
+            "endTime": "12:30",
+            "details": "ENT 3013: BIF6 K1 (NORULHUDA) [BT3.2]"
+          }
+        ],
+        "Thursday": [
+          {
+            "startTime": "08:30",
+            "endTime": "10:30",
+            "details": "MGM 3223: BIF6 K2 (ABDUL HALIM) [BT1.3]"
+          },
+          {
+            "startTime": "12:30",
+            "endTime": "02:30",
+            "details": "ENT 3023: BIF6 K2 (AZMERA) [BT2.1]"
+          }
+        ],
+        "Friday": [],
+        "Saturday": []
+      },
+      "courses": [
+        {
+          "no": 1,
+          "code": "FIN 3033",
+          "name": "PENGURUSAN KEWANGAN LANJUTAN"
+        },
+        {
+          "no": 2,
+          "code": "ISF 3213",
+          "name": "ISLAMIC CAPITAL MARKET"
+        },
+        {
+          "no": 3,
+          "code": "GSD 3073",
+          "name": "AQIDAH ISLAMIYYAH"
+        },
+        {
+          "no": 4,
+          "code": "ENT 3013",
+          "name": "ASAS KEUSAHAWANAN"
+        },
+        {
+          "no": 5,
+          "code": "ENT 3023",
+          "name": "ISLAMIC ENTREPRENEURSHIP"
+        },
+        {
+          "no": 6,
+          "code": "MGM 3223",
+          "name": "PENGURUSAN STRATEGIK"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "The source workbook contains schedules labelled BIF1, BIF3, BIF4, BIF5 and BIF6.",
+    "No schedule labelled BIF2 was present in the provided workbook.",
+    "Semester numbers are mapped from the BIF labels where present; verify this mapping if BIF labels do not correspond to semester numbers."
+  ]
+}
